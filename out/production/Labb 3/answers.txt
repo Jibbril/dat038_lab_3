@@ -1,0 +1,148 @@
+
+/******************************************************************************
+** DAT038, TDA417  Datastrukturer och algoritmer, LP2 2020
+** Lab 3: Plagiarism detection
+*******************************************************************************/
+
+Name of lab group: [66]
+Group member A:    [Jibbril Ndaw Berbres]
+Group member B:    [Fredrik Hamrefors]
+Group member C:    [Johan Gönczi]
+
+
+/******************************************************************************
+** Task: Running the slow program
+**
+** 1. What is the complexity of findSimilarity?
+**    Answer in terms of N, the total number of 5-grams in the input files.
+**    Assume that the number of 5-grams that occur in more than one file
+**    is a small constant - that is, there is not much plagiarised text.
+******************************************************************************/
+
+The number of operations is
+
+D*D*(K*K - D) ~= D*D*K*K = N^2
+
+which means the complexity is O(N^2).
+
+
+/******************************************************************************
+** 2. How long did the program take on the 'small' and 'medium' directories?
+**    Is the ratio between the times what you would expect, given the complexity?
+**    Explain very briefly why.
+*******************************************************************************/
+
+The time required to run the program using the 'small' directory is approximately
+2 seconds. To run it with the 'medium' directory the time required was about 320
+seconds. Given that N grows by a factor of 10 the predicted computation time for
+the medium set would be more like 200 seconds. Thus the complexity seems to be
+slightly worse than N^2 (approximately 1.6*N^2). However, it is still within the bounds described in the
+assignment so we assume it's ok.
+
+
+/******************************************************************************
+** 3. How long do you predict the program would take to run on
+**    the 'huge' directory? Show your calculations.
+*******************************************************************************/
+
+N changes by a factor of 20 between the medium and huge directories. Given our
+approximation in the previous task the expected time for the huge directory
+would be
+
+1.6*20^2*320 ~= 205 000 s ~= 2.4 days.
+
+If we instead calculate using the mathematical complexity of N^2 we get
+
+20^2*320 ~= 128 000 s ~= 1.5 days.
+
+
+/******************************************************************************
+** Task: Using binary search trees
+**
+** 4. Which of the trees usually become unbalanced?
+******************************************************************************/
+
+Due to the structure of how the BST 'similarity' was reading the data it was
+always unbalanced in the worst kind of way. This is due to the files being
+read in alphabetical order. Thus the nodes were always ending up on the right
+side which essentially results in a list. In the 'index' BST the nodes are
+based on the Ngrams which are more random in nature and thus produces much
+more balanced trees. However, it is important to point out that index is not
+necessarily perfectly balanced.
+
+
+/******************************************************************************
+** 5 (optional). Is there a simple way to stop these trees becoming unbalanced?
+******************************************************************************/
+
+For similarity a simple shuffle of the files would at least avoid the worst
+case scenario. For the 'index' BST a shuffle would not have as much of an
+effect since the ordering of words in a sentence is already quite random.
+Shuffling 'index' would however enable it to run files such as the one in
+the badforbst folder that are designed to exploit the worst case scenario
+of a BST.
+
+
+/******************************************************************************
+** Task: Using scapegoat trees
+**
+** 6. Now what is the total complexity of buildIndex and findSimilarity?
+**    Again, assume a total of N 5-grams, and a constant number of 5-grams
+**    that occur in more than one file.
+******************************************************************************/
+
+[...]
+
+
+/******************************************************************************
+** 7 (optional). What if the total similarity score is an arbitrary number S,
+**               rather than a small constant?
+******************************************************************************/
+
+[...]
+
+
+
+/******************************************************************************
+** Appendix: General information
+**
+** A. Approximately how many hours did you spend on the assignment?
+******************************************************************************/
+
+[Jibbril Ndaw Berbres]:  [..hours..]
+[Fredrik Hamrefors]:  [..hours..]
+[.Johan Gönczi]:  [..hours..]
+
+
+/******************************************************************************
+** B. Are there any known bugs / limitations?
+******************************************************************************/
+
+[...]
+
+
+/******************************************************************************
+** C. Did you collaborate with any other students on this lab?
+**    If so, please write in what way you collaborated and with whom.
+**    Also include any resources (including the web) that you may
+**    may have used in creating your design.
+******************************************************************************/
+
+[...]
+
+
+/******************************************************************************
+** D. Describe any serious problems you encountered.                    
+******************************************************************************/
+
+[...]
+
+
+/******************************************************************************
+** E. List any other comments here.
+**    Feel free to provide any feedback on how much you learned 
+**    from doing the assignment, and whether you enjoyed it.                                             
+******************************************************************************/
+
+[...]
+

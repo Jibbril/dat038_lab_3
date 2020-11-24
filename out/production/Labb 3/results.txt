@@ -1,0 +1,231 @@
+Result from running with small before changes
+---------------------------------------------------------
+Reading all input files took 0,04 seconds
+Building n-gram index took 0,00 seconds
+Computing similarity scores took 1,82 seconds
+Finding the most similar files took 0,00 seconds
+In total the program took 1,88 seconds
+
+Balance statistics:
+  files: BST, size 7, height 6
+  index: BST, size 0, height -1
+  similarity: BST, size 16, height 15
+
+Plagiarism report:
+   80 similarity: documents\small\Plagiarism.txt and documents\small\Find me.txt
+   52 similarity: documents\small\Rogeting.txt and documents\small\Find me.txt
+   32 similarity: documents\small\To be, or not to be.txt and documents\small\Hamlet.txt
+   30 similarity: documents\small\To be, or not to be.txt and documents\small\Find me.txt
+
+Process finished with exit code 0
+
+
+
+Result from running with medium before changes
+---------------------------------------------------------
+Reading all input files took 0,15 seconds
+Building n-gram index took 0,00 seconds
+Computing similarity scores took 321,13 seconds
+Finding the most similar files took 0,01 seconds
+In total the program took 321,30 seconds
+
+Balance statistics:
+  files: BST, size 110, height 109
+  index: BST, size 0, height -1
+  similarity: BST, size 874, height 873
+
+Plagiarism report:
+   80 similarity: documents\medium\Plagiarism.txt and documents\medium\Find me.txt
+   72 similarity: documents\medium\Pippi Longstocking (novel).txt and documents\medium\Pippi Longstocking (1969 TV series).txt
+   68 similarity: documents\medium\The Children of Noisy Village (film).txt and documents\medium\More About the Children of Noisy Village.txt
+   67 similarity: documents\medium\Convention on the Rights of the Child.txt and documents\medium\Children's rights.txt
+   58 similarity: documents\medium\Pippi Longstocking (1969 film).txt and documents\medium\Pippi Goes on Board (film).txt
+   52 similarity: documents\medium\Picture book.txt and documents\medium\Children's literature.txt
+
+Process finished with exit code 0
+
+
+
+Result from running with small after changes (Task 2)
+---------------------------------------------------------
+Reading all input files took 0,06 seconds
+Building n-gram index took 0,07 seconds
+Computing similarity scores took 0,06 seconds
+Finding the most similar files took 0,00 seconds
+In total the program took 0,20 seconds
+
+Balance statistics:
+  files: BST, size 7, height 6
+  index: BST, size 19748, height 34
+  similarity: BST, size 23, height 7
+
+Plagiarism report:
+   80 similarity: documents\small\Plagiarism.txt and documents\small\Find me.txt
+   52 similarity: documents\small\Rogeting.txt and documents\small\Find me.txt
+   32 similarity: documents\small\To be, or not to be.txt and documents\small\Hamlet.txt
+   30 similarity: documents\small\To be, or not to be.txt and documents\small\Find me.txt
+
+Process finished with exit code 0
+
+
+
+Result from running with medium after changes (Task 2)
+---------------------------------------------------------
+Reading all input files took 0,18 seconds
+Building n-gram index took 1,09 seconds
+Computing similarity scores took 0,42 seconds
+Finding the most similar files took 0,00 seconds
+In total the program took 1,71 seconds
+
+Balance statistics:
+  files: BST, size 110, height 109
+  index: BST, size 208024, height 49
+  similarity: BST, size 984, height 20
+
+Plagiarism report:
+   80 similarity: documents\medium\Plagiarism.txt and documents\medium\Find me.txt
+   72 similarity: documents\medium\Pippi Longstocking (novel).txt and documents\medium\Pippi Longstocking (1969 TV series).txt
+   68 similarity: documents\medium\The Children of Noisy Village (film).txt and documents\medium\More About the Children of Noisy Village.txt
+   67 similarity: documents\medium\Convention on the Rights of the Child.txt and documents\medium\Children's rights.txt
+   58 similarity: documents\medium\Pippi Longstocking (1969 film).txt and documents\medium\Pippi Goes on Board (film).txt
+   52 similarity: documents\medium\Picture book.txt and documents\medium\Children's literature.txt
+
+Process finished with exit code 0
+
+
+
+Result from running with big after changes (Task 2)
+---------------------------------------------------------
+Reading all input files took 0,89 seconds
+Building n-gram index took 12,93 seconds
+Computing similarity scores took 8,78 seconds
+Finding the most similar files took 0,13 seconds
+In total the program took 22,74 seconds
+
+Balance statistics:
+  files: BST, size 952, height 951
+  index: BST, size 2066939, height 66
+  similarity: BST, size 55194, height 70
+
+Plagiarism report:
+ 2543 similarity: documents\big\Swedes.txt and documents\big\Sweden.txt
+  166 similarity: documents\big\Riksdag.txt and documents\big\Government of Sweden.txt
+  150 similarity: documents\big\United Kingdom.txt and documents\big\British people.txt
+  140 similarity: documents\big\Rock music.txt and documents\big\Hard rock.txt
+  127 similarity: documents\big\Sweden.txt and documents\big\Government of Sweden.txt
+  116 similarity: documents\big\Edward Burne-Jones.txt and documents\big\Dante Gabriel Rossetti.txt
+   94 similarity: documents\big\South Korea.txt and documents\big\Japan.txt
+   85 similarity: documents\big\Soviet Union.txt and documents\big\Russian Soviet Federative Socialist Republic.txt
+   83 similarity: documents\big\Quentin Blake.txt and documents\big\Anthony Browne (author).txt
+   83 similarity: documents\big\Hamburg.txt and documents\big\Buenos Aires.txt
+   82 similarity: documents\big\Genetically modified food controversies.txt and documents\big\Food security.txt
+   79 similarity: documents\big\Steve Angello.txt and documents\big\Axwell.txt
+   72 similarity: documents\big\Pippi Longstocking (novel).txt and documents\big\Pippi Longstocking (1969 TV series).txt
+   68 similarity: documents\big\The Children of Noisy Village (film).txt and documents\big\More About the Children of Noisy Village.txt
+   67 similarity: documents\big\Convention on the Rights of the Child.txt and documents\big\Children's rights.txt
+   65 similarity: documents\big\Swedish language.txt and documents\big\Swedes.txt
+   64 similarity: documents\big\Rasmus, Pontus och Toker.txt and documents\big\Luffaren och Rasmus.txt
+   62 similarity: documents\big\United Kingdom.txt and documents\big\Italy.txt
+   61 similarity: documents\big\Uri Orlev.txt and documents\big\Cecil B├©dker.txt
+   59 similarity: documents\big\Sweden.txt and documents\big\Austria.txt
+   59 similarity: documents\big\Munich.txt and documents\big\Buenos Aires.txt
+   58 similarity: documents\big\Pippi Longstocking (1969 film).txt and documents\big\Pippi Goes on Board (film).txt
+   58 similarity: documents\big\Munich.txt and documents\big\Hamburg.txt
+   56 similarity: documents\big\Wilmington, Delaware.txt and documents\big\Plainview, Texas.txt
+   56 similarity: documents\big\Russian Soviet Federative Socialist Republic.txt and documents\big\Communist Party of the Soviet Union.txt
+   56 similarity: documents\big\Madicken pa╠è Junibacken.txt and documents\big\Du a╠êr inte klok, Madicken.txt
+   55 similarity: documents\big\Soviet Union.txt and documents\big\Communist Party of the Soviet Union.txt
+   55 similarity: documents\big\Noriko-San girl of Japan.txt and documents\big\Dirk lives in Holland.txt
+   55 similarity: documents\big\Corporal punishment.txt and documents\big\Children's rights.txt
+   52 similarity: documents\big\Picture book.txt and documents\big\Children's literature.txt
+   51 similarity: documents\big\Same-sex marriage in Denmark.txt and documents\big\LGBT rights in Denmark.txt
+   50 similarity: documents\big\United Kingdom.txt and documents\big\Australia.txt
+   49 similarity: documents\big\Lygia Bojunga Nunes.txt and documents\big\Christine No╠êstlinger.txt
+   48 similarity: documents\big\Yours Truly (Ariana Grande album).txt and documents\big\Ariana Grande.txt
+   48 similarity: documents\big\Italy.txt and documents\big\Bulgaria.txt
+   48 similarity: documents\big\Enid Blyton.txt and documents\big\Children's literature.txt
+   48 similarity: documents\big\Emil i Lo╠ênneberga (film).txt and documents\big\Emil and the Piglet.txt
+   47 similarity: documents\big\Nuremberg.txt and documents\big\Hamburg.txt
+   46 similarity: documents\big\New Mischief by Emil.txt and documents\big\Emil i Lo╠ênneberga (film).txt
+   45 similarity: documents\big\United Kingdom.txt and documents\big\European Union.txt
+   44 similarity: documents\big\Lygia Bojunga Nunes.txt and documents\big\Katherine Paterson.txt
+   43 similarity: documents\big\New Mischief by Emil.txt and documents\big\Emil and the Piglet.txt
+   42 similarity: documents\big\United Kingdom.txt and documents\big\Japan.txt
+   42 similarity: documents\big\Noy lives in Thailand.txt and documents\big\Lilibet, circus child.txt
+   42 similarity: documents\big\Italy.txt and documents\big\Austria.txt
+   42 similarity: documents\big\Gull-Pian.txt and documents\big\Go'natt Herr Luffare.txt
+   42 similarity: documents\big\Government of India Act 1935.txt and documents\big\British Raj.txt
+   40 similarity: documents\big\United Kingdom.txt and documents\big\Austria.txt
+   40 similarity: documents\big\Corporal punishment.txt and documents\big\Convention on the Rights of the Child.txt
+   39 similarity: documents\big\Treaty of Rome.txt and documents\big\European Union.txt
+
+Process finished with exit code 0
+
+
+
+Result from running with huge after changes (Task 2)
+---------------------------------------------------------
+Reading all input files took 1,51 seconds
+Building n-gram index took 28,71 seconds
+Computing similarity scores took 21,34 seconds
+Finding the most similar files took 0,40 seconds
+In total the program took 51,97 seconds
+
+Balance statistics:
+  files: BST, size 1418, height 1417
+  index: BST, size 3852238, height 85
+  similarity: BST, size 163804, height 118
+
+Plagiarism report:
+ 1470 similarity: documents\huge\Court of King's Bench (England).txt and documents\huge\Court of Common Pleas (England).txt
+  874 similarity: documents\huge\Ethics.txt and documents\huge\Deontological ethics.txt
+  696 similarity: documents\huge\Saudi Arabia.txt and documents\huge\Najd.txt
+  496 similarity: documents\huge\San Francisco.txt and documents\huge\San Francisco Bay Area.txt
+  311 similarity: documents\huge\Netherlands.txt and documents\huge\Dutch East Indies.txt
+  272 similarity: documents\huge\The Life and Opinions of Tristram Shandy, Gentleman.txt and documents\huge\Laurence Sterne.txt
+  245 similarity: documents\huge\National library.txt and documents\huge\Bibliothe╠Çque nationale de France.txt
+  244 similarity: documents\huge\Mimesis.txt and documents\huge\Diegesis.txt
+  197 similarity: documents\huge\Southern United States.txt and documents\huge\Colonial history of the United States.txt
+  190 similarity: documents\huge\Lawrence Lessig.txt and documents\huge\Aaron Swartz.txt
+  188 similarity: documents\huge\Literary influence of Hamlet.txt and documents\huge\Hamlet.txt
+  172 similarity: documents\huge\Fair use.txt and documents\huge\Campbell v. Acuff-Rose Music, Inc.txt
+  168 similarity: documents\huge\Rhetorical modes.txt and documents\huge\Mode (literature).txt
+  164 similarity: documents\huge\Fair use.txt and documents\huge\Copyright law of Australia.txt
+  148 similarity: documents\huge\Genre.txt and documents\huge\Genre studies.txt
+  147 similarity: documents\huge\Open-source software.txt and documents\huge\Business models for open-source software.txt
+  142 similarity: documents\huge\San Lucas, California.txt and documents\huge\Madera, California.txt
+  136 similarity: documents\huge\Public-domain software.txt and documents\huge\Public domain.txt
+  124 similarity: documents\huge\Madera, California.txt and documents\huge\Irvine, California.txt
+  123 similarity: documents\huge\History of bankruptcy law.txt and documents\huge\Bankruptcy.txt
+  122 similarity: documents\huge\Thousand Oaks, California.txt and documents\huge\Irvine, California.txt
+  119 similarity: documents\huge\Thousand Oaks, California.txt and documents\huge\Madera, California.txt
+  116 similarity: documents\huge\Monopoly.txt and documents\huge\Competition law.txt
+  110 similarity: documents\huge\United States.txt and documents\huge\Russia.txt
+  110 similarity: documents\huge\St. Petersburg, Florida.txt and documents\huge\Madera, California.txt
+  110 similarity: documents\huge\Derivative work.txt and documents\huge\Copyright law of the United States.txt
+  110 similarity: documents\huge\Crowdsourcing.txt and documents\huge\Business models for open-source software.txt
+  109 similarity: documents\huge\San Lucas, California.txt and documents\huge\Irvine, California.txt
+  107 similarity: documents\huge\National Register of Historic Places listings in Wyoming.txt and documents\huge\National Register of Historic Places listings in New Jersey.txt
+  106 similarity: documents\huge\Internet Archive.txt and documents\huge\Abandonware.txt
+  106 similarity: documents\huge\Courtauld Institute of Art.txt and documents\huge\Courtauld Gallery.txt
+  105 similarity: documents\huge\Copyright.txt and documents\huge\Copyright law of the United States.txt
+  104 similarity: documents\huge\Scientific misconduct.txt and documents\huge\List of scientific misconduct incidents.txt
+  103 similarity: documents\huge\Thousand Oaks, California.txt and documents\huge\San Lucas, California.txt
+  101 similarity: documents\huge\Net neutrality law.txt and documents\huge\Internet service provider.txt
+  101 similarity: documents\huge\Mona Lisa.txt and documents\huge\Mona Lisa replicas and reinterpretations.txt
+  100 similarity: documents\huge\St. Petersburg, Florida.txt and documents\huge\San Lucas, California.txt
+   99 similarity: documents\huge\Paraphrasing of copyrighted material.txt and documents\huge\Fair use.txt
+   99 similarity: documents\huge\Norwegian Elkhound.txt and documents\huge\Ja╠êmthund.txt
+   99 similarity: documents\huge\2020 in public domain.txt and documents\huge\2011 in public domain.txt
+   98 similarity: documents\huge\Erotic literature.txt and documents\huge\D. H. Lawrence.txt
+   97 similarity: documents\huge\Trade secret.txt and documents\huge\Intellectual property.txt
+   97 similarity: documents\huge\Italy.txt and documents\huge\France.txt
+   94 similarity: documents\huge\Thousand Oaks, California.txt and documents\huge\St. Petersburg, Florida.txt
+   94 similarity: documents\huge\Portland, Oregon.txt and documents\huge\Irvine, California.txt
+   93 similarity: documents\huge\Henri Queuille.txt and documents\huge\Georges Bidault.txt
+   91 similarity: documents\huge\Public-domain software.txt and documents\huge\Free software license.txt
+   90 similarity: documents\huge\Copyright.txt and documents\huge\Berne Convention.txt
+   89 similarity: documents\huge\Rhetorical modes.txt and documents\huge\Exposition (narrative).txt
+   89 similarity: documents\huge\Mississippi.txt and documents\huge\Florida.txt
+
+Process finished with exit code 0
