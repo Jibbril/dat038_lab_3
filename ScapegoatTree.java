@@ -131,14 +131,21 @@ public class ScapegoatTree<Key extends Comparable<Key>, Value> {
         // If you like you can start from the code for put in BST.java.
         // Read the lab instructions for more hints!
         if (cmp < 0) {
-            // key is less than node.key
+            node.left  = put(node.left,  key, val);
         } else if (cmp > 0) {
-            // key is greater than node.key
+            node.right = put(node.right, key, val);
         } else {
-            // key is equal to node.key
+            node.val   = val;
+        }
+        node.size = 1 + size(node.left) + size(node.right);
+        node.height = 1 + Math.max(height(node.left), height(node.right));
+
+
+        if (node.height > alpha * log2(node.size)) {
+            node = rebuild(node);
         }
 
-        throw new UnsupportedOperationException();
+        return node;
     }
 
     // Rebuild a tree to make it perfectly balanced.
@@ -182,8 +189,8 @@ public class ScapegoatTree<Key extends Comparable<Key>, Value> {
         Node root = new Node(nodes.get(mid).key,nodes.get(mid).val);
         root.left = balanceNodes(nodes, lo, mid-1);
         root.right = balanceNodes(nodes, mid+1, hi);
-        root.height = height(root);
-        root.size = size(root);
+        root.height = Math.max(height(root.left), height(root.right)) + 1;
+        root.size = 1 + size(root.left) + size(root.right);
 
         return root;
         // TO DO: finish this method.
