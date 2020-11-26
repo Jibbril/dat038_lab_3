@@ -36,8 +36,8 @@ The time required to run the program using the 'small' directory is approximatel
 2 seconds. To run it with the 'medium' directory the time required was about 320
 seconds. Given that N grows by a factor of 10 the predicted computation time for
 the medium set would be more like 200 seconds. Thus the complexity seems to be
-slightly worse than N^2 (approximately 1.6*N^2). However, it is still within the bounds described in the
-assignment so we assume it's ok.
+slightly worse than N^2 (approximately 1.6*N^2). However, it is still within the
+bounds described in the assignment so we assume it's ok.
 
 
 /******************************************************************************
@@ -91,7 +91,28 @@ of a BST.
 **    that occur in more than one file.
 ******************************************************************************/
 
-[...]
+findSimilarity:
+Assume the average number of paths per n-gram is k and the total amount of
+n-grams is N. In the assignment it is given that inserting an item into a
+scapegoat tree of size N takes  O(log(N)) time. Given this the complexity
+is
+
+O(N*k*k*log(N)) ~= O(N*log(N))
+
+since k is a small constant and k*k << N.
+
+buildIndex:
+In this function we perform a number of operations that take logarithmic time.
+However, since we are using the O() notation these do not matter so long that
+they are occurring in the same loop. We loop through all N n-grams, thus the
+total complexity ends up being
+
+O(N*x*log(N))  ~= O(N*log(N))
+
+where x is some positive integer representing the number of logarithmic
+operations per lap in the loop.
+
+
 
 
 /******************************************************************************
@@ -109,16 +130,16 @@ of a BST.
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[Jibbril Ndaw Berbres]:  [..hours..]
-[Fredrik Hamrefors]:  [..hours..]
-[.Johan Gönczi]:  [..hours..]
+[Jibbril Ndaw Berbres]:  [6h]
+[Fredrik Hamrefors]:  [6h]
+[Johan Gönczi]:  [6h]
 
 
 /******************************************************************************
 ** B. Are there any known bugs / limitations?
 ******************************************************************************/
 
-[...]
+No.
 
 
 /******************************************************************************
@@ -128,14 +149,16 @@ of a BST.
 **    may have used in creating your design.
 ******************************************************************************/
 
-[...]
+We did not collaborate with any other students or used any other resources.
 
 
 /******************************************************************************
 ** D. Describe any serious problems you encountered.                    
 ******************************************************************************/
 
-[...]
+We did not encounter any serious problems but some minor, for example when
+we wanted to count the number of heights after we had rebuilt the tree.
+
 
 
 /******************************************************************************
@@ -144,5 +167,5 @@ of a BST.
 **    from doing the assignment, and whether you enjoyed it.                                             
 ******************************************************************************/
 
-[...]
+Fun lab!
 

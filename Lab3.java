@@ -84,11 +84,20 @@ public class Lab3 {
         // TO DO: build index of n-grams
         for (Path path: files.keys()) {
             for (Ngram ngram: files.get(path)) {
+                /*
+                * Check if there exists an arraylist for the specified n-gram.
+                * If not, create one.
+                * */
                 if(!index.contains(ngram)) {
                     index.put(ngram, new ArrayList<Path>());
                 }
 
                 ArrayList<Path> found = index.get(ngram);
+
+                /*
+                * Check so that we don't add the same path multiple times if
+                * the same n-gram shows up multiple times in the same file.
+                * */
                 if (!found.contains(path)) {
                     found.add(path);
                     index.put(ngram, found);
@@ -121,7 +130,10 @@ public class Lab3 {
                 }
             }
         }*/
-
+        /*
+        * Run through all the n-grams and every combination of paths for each.
+        * For each combination, increase the similarity score.
+        * */
         for (Ngram ngram: index.keys()) {
             for (Path path1: index.get(ngram)) {
                 for (Path path2: index.get(ngram)) {

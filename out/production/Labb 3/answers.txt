@@ -91,7 +91,27 @@ of a BST.
 **    that occur in more than one file.
 ******************************************************************************/
 
-[...]
+findSimilarity:
+Assume the average number of paths per n-gram is k and the total amount of
+n-grams is N. In the assignment it is given that inserting an item into a
+scapegoat tree of size N takes  O(log(N)) time. Given this the complexity
+is
+
+O(N*k*k*log(N)) ~= O(N*log(N))
+
+since k is a small constant and k*k << N.
+
+buildIndex:
+In this function we perform a number of operations that take logarithmic time.
+However, since we are using the O() notation these do not matter so long that
+they are occurring in the same loop. We loop through all N n-grams, thus the
+total complexity ends up being
+
+O(N*x*log(N))  ~= O(N*log(N))
+
+where x is some positive integer.
+
+
 
 
 /******************************************************************************
@@ -111,7 +131,7 @@ of a BST.
 
 [Jibbril Ndaw Berbres]:  [..hours..]
 [Fredrik Hamrefors]:  [..hours..]
-[.Johan Gönczi]:  [..hours..]
+[Johan Gönczi]:  [..hours..]
 
 
 /******************************************************************************
@@ -128,14 +148,16 @@ of a BST.
 **    may have used in creating your design.
 ******************************************************************************/
 
-[...]
+We did not collaborate with any other students or used any other resources
 
 
 /******************************************************************************
 ** D. Describe any serious problems you encountered.                    
 ******************************************************************************/
 
-[...]
+We did not encounter any serious problems but some minor, for example when
+we wanted to count the number of heights that
+
 
 
 /******************************************************************************
