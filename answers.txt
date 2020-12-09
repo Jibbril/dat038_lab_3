@@ -62,7 +62,7 @@ If we instead calculate using the mathematical complexity of N^2 we get
 ** 4. Which of the trees usually become unbalanced?
 ******************************************************************************/
 
-Due to the structure of how the BST 'similarity' was reading the data it was
+Due to the structure of how the BST 'files' was reading the data it was
 always unbalanced in the worst kind of way. This is due to the files being
 read in alphabetical order. Thus the nodes were always ending up on the right
 side which essentially results in a list. In the 'index' BST the nodes are
@@ -111,6 +111,10 @@ O(N*x*log(N))  ~= O(N*log(N))
 
 where x is some positive integer representing the number of logarithmic
 operations per lap in the loop.
+
+Thus the total complexity is
+
+O(2*N*log(N)) ~= O(N*log(N))
 
 
 

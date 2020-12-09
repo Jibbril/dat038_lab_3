@@ -36,8 +36,8 @@ The time required to run the program using the 'small' directory is approximatel
 2 seconds. To run it with the 'medium' directory the time required was about 320
 seconds. Given that N grows by a factor of 10 the predicted computation time for
 the medium set would be more like 200 seconds. Thus the complexity seems to be
-slightly worse than N^2 (approximately 1.6*N^2). However, it is still within the bounds described in the
-assignment so we assume it's ok.
+slightly worse than N^2 (approximately 1.6*N^2). However, it is still within the
+bounds described in the assignment so we assume it's ok.
 
 
 /******************************************************************************
@@ -109,7 +109,8 @@ total complexity ends up being
 
 O(N*x*log(N))  ~= O(N*log(N))
 
-where x is some positive integer.
+where x is some positive integer representing the number of logarithmic
+operations per lap in the loop.
 
 
 
@@ -129,16 +130,16 @@ where x is some positive integer.
 ** A. Approximately how many hours did you spend on the assignment?
 ******************************************************************************/
 
-[Jibbril Ndaw Berbres]:  [..hours..]
-[Fredrik Hamrefors]:  [..hours..]
-[Johan Gönczi]:  [..hours..]
+[Jibbril Ndaw Berbres]:  [6h]
+[Fredrik Hamrefors]:  [6h]
+[Johan Gönczi]:  [6h]
 
 
 /******************************************************************************
 ** B. Are there any known bugs / limitations?
 ******************************************************************************/
 
-[...]
+No.
 
 
 /******************************************************************************
@@ -148,7 +149,7 @@ where x is some positive integer.
 **    may have used in creating your design.
 ******************************************************************************/
 
-We did not collaborate with any other students or used any other resources
+We did not collaborate with any other students or used any other resources.
 
 
 /******************************************************************************
@@ -156,7 +157,7 @@ We did not collaborate with any other students or used any other resources
 ******************************************************************************/
 
 We did not encounter any serious problems but some minor, for example when
-we wanted to count the number of heights that
+we wanted to count the number of heights after we had rebuilt the tree.
 
 
 
@@ -166,5 +167,5 @@ we wanted to count the number of heights that
 **    from doing the assignment, and whether you enjoyed it.                                             
 ******************************************************************************/
 
-[...]
+Fun lab!
 

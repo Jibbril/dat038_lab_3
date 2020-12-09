@@ -137,6 +137,7 @@ public class Lab3 {
         for (Ngram ngram: index.keys()) {
             for (Path path1: index.get(ngram)) {
                 for (Path path2: index.get(ngram)) {
+                    if (path1.equals(path2)) continue;
                     PathPair pair = new PathPair(path1, path2);
                     if (!similarity.contains(pair))
                         similarity.put(pair, 0);
